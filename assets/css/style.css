@@ -416,15 +416,20 @@ img {
 }
 
 .main-nav {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     top: 0;
     position: inherit;
     left: 0;
     padding: 0;
     width: 100%;
-    height: auto
+    height: auto;
+    
 }
 
+.main-nav img{
+    width: 60%;
+    height: 40%;
+}
 .main-nav .navbar {
     padding-left: 0;
     padding-right: 0
@@ -1096,7 +1101,8 @@ img {
     z-index: 1;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height:40%;
 }
 
 .banner-item::before {
@@ -1145,7 +1151,7 @@ img {
 }
 
 .item-bg1 {
-    background-image: url(../images/home-one/home-one-img6.jp.jpeg)
+    background-image: url(../images/home-one/home-one-img4.jpg)
 }
 
 .item-bg2 {
@@ -1153,7 +1159,7 @@ img {
 }
 
 .item-bg3 {
-    background-image: url(../images/home-one/home-one-img4.jpg)
+    background-image: url(../images/home-one/home-one-img6.jp.jpeg)
 }
 
 .banner-area {
@@ -1542,7 +1548,7 @@ ul.horizontal-slide li[class*="col"]:first-child {
 
 .about-play {
     position: relative;
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 .about-play img {
@@ -1724,73 +1730,16 @@ ul.horizontal-slide li[class*="col"]:first-child {
     color: #0071dc
 }
 
-main {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  article {
-    margin: 1rem 0;
-  }
-  
-  /* Now lets do a Grid-based layout */
-  
-  @supports (display: grid) {
-    main { 
-      max-width: 10000px;
-      margin: 0;
-    }
-    article {
-      margin: 0;
-    }
-    .deals {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 1rem;
-    }
-  }
-    
-  .deals {
-    font-family: Avenir, Roboto, Helvetica, san-serif; 
-    font-size: 80%;
-    margin-top: 20px;
-  }
-  .sale-item {
-    display: flex;
-    flex-flow: column;
-    border:  1px solid black;
-    border-radius: 1rem;
-    padding:20PX;
-    margin-left:20px;
-    margin-right:20px;
-  }
-  .sale-item > h1 {
-    /* margin: 1rem 1rem 0; */
-    font-size: 20px;
-  }
-  .sale-item > ul {
-    margin: 0 0 1rem;
-  }
+/* brand logos */
+.brands li{
+    display:block;
+    float: left;
+    list-style: none;
+    width: 50px;
+}
 
-  .sale-item > p {
-    margin: 0.25em 1rem 1rem;
-  }
-  .sale-item > img {
-    order: -1;
-    align-self: center;
-  }
-
-  .sale-item > button {
-    margin-top: auto; 
-    background: teal;
-    color: white;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-  }
-  
   .services-area {
-    background-color: #070b3b;
+    background-color: #030303;
     position: relative
 }
 
@@ -1808,11 +1757,21 @@ main {
 
 .services-card {
     padding: 30px 20px 25px;
-    background-color: #fff;
+    background-color: rgb(249, 248, 250);
     border-radius: 10px;
     position: relative;
     z-index: 1;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+   
+}
+
+.square_box{
+    width: 50%;
+    float: left;
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    
 }
 
 .services-card:hover::before {
@@ -3280,8 +3239,8 @@ main {
 .brand-item img {
     width: unset !important;
     text-align: center;
-    margin: 0 auto;
-    height: 50px;
+    margin-top:5px;
+    height: 100px;
 }
 
 .clients-area {
@@ -5010,7 +4969,8 @@ main {
 .map-area iframe {
     display: block;
     width: 100%;
-    height: 400px
+    height: 400px;
+    margin-bottom: 30px;
 }
 
 .footer-bg {
