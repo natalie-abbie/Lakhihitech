@@ -416,15 +416,20 @@ img {
 }
 
 .main-nav {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     top: 0;
     position: inherit;
     left: 0;
     padding: 0;
     width: 100%;
-    height: auto
+    height: auto;
+    
 }
 
+.main-nav img{
+    width: 60%;
+    height: 40%;
+}
 .main-nav .navbar {
     padding-left: 0;
     padding-right: 0
@@ -1096,7 +1101,8 @@ img {
     z-index: 1;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height:40%;
 }
 
 .banner-item::before {
@@ -1751,11 +1757,21 @@ ul.horizontal-slide li[class*="col"]:first-child {
 
 .services-card {
     padding: 30px 20px 25px;
-    background-color: #fff;
+    background-color: rgb(249, 248, 250);
     border-radius: 10px;
     position: relative;
     z-index: 1;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+   
+}
+
+.square_box{
+    width: 50%;
+    float: left;
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    
 }
 
 .services-card:hover::before {
