@@ -3073,7 +3073,7 @@ ul.horizontal-slide li[class*="col"]:first-child {
        object-fit: cover;
     max-width: 120px;
     max-height: 60px;
-    filter: grayscale(100%) contrast(25%);
+    /* filter: grayscale(100%) contrast(25%); */
     transition: filter 0.3s ease;
   }
   .logogrid__img:hover {
