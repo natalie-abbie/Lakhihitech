@@ -1739,7 +1739,7 @@ ul.horizontal-slide li[class*="col"]:first-child {
 }
 
   .services-area {
-    background-color: #030303;
+    background-color: #0f0758;
     position: relative
 }
 
@@ -3073,8 +3073,8 @@ ul.horizontal-slide li[class*="col"]:first-child {
   .logogrid__img {
     -o-object-fit: cover;
        object-fit: cover;
-    max-width: 120px;
-    max-height: 60px;
+    max-width: 240px;
+    max-height: 90px;
     /* filter: grayscale(100%) contrast(25%); */
     transition: filter 0.3s ease;
   }
@@ -3084,9 +3084,9 @@ ul.horizontal-slide li[class*="col"]:first-child {
   
  
   .container {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
-    margin: auto;
+    /* margin: auto; */
   }
 /* end */
 .team-card {
@@ -3198,6 +3198,9 @@ ul.horizontal-slide li[class*="col"]:first-child {
     margin-bottom: 30px
 }
 
+.technology-card:hover{
+background-color: #0071dc;
+}
 .technology-card i {
     font-size: 50px;
     line-height: 1;
@@ -5022,7 +5025,7 @@ ul.horizontal-slide li[class*="col"]:first-child {
 }
 
 .footer-widget h3 {
-    margin-top: 0;
+    /* margin-top: 0; */
     font-size: 24px;
     margin-bottom: 30px;
     color: #fff;
