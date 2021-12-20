@@ -218,7 +218,7 @@ img {
 }
 
 .top-header-bg {
-    background-color: #070b3b
+    background-color: rgb(206, 9, 9);
 }
 
 .top-left-side .top-header-text {
@@ -416,13 +416,13 @@ img {
 }
 
 .main-nav {
-    background-color: rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255);
     top: 0;
     position: inherit;
     left: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    /* height: 15%; */
     
 }
 
@@ -434,6 +434,18 @@ img {
     padding-left: 0;
     padding-right: 0
 }
+
+.navbar-brand h1{ 
+color: red;
+font-size: 30px;
+font-weight: bold;
+}
+
+.mobile-nav .logo h1{ 
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    }
 
 .main-nav nav .navbar-nav .nav-item:hover a,
 .main-nav nav .navbar-nav .nav-item .active {
@@ -1102,8 +1114,10 @@ img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:40%;
+    /* height:50%; */
 }
+
+
 
 .banner-item::before {
     content: '';
@@ -1114,7 +1128,7 @@ img {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: #070b3b;
+    /* background-color: red; */
     opacity: .7
 }
 
@@ -1126,7 +1140,7 @@ img {
 .banner-item-content span {
     font-size: 13px;
     font-weight: 500;
-    color: #0071dc;
+    color: red;
     padding: 10px 25px;
     background-color: #fff;
     border-radius: 50px;
@@ -1151,15 +1165,18 @@ img {
 }
 
 .item-bg1 {
-    background-image: url(../images/home-one/home-one-img4.jpg)
+    background-image: url(../images/home-one/home-one-img1.jpg);
+    padding-top: 5%;
 }
 
 .item-bg2 {
-    background-image: url(../images/home-one/home-one-img5.jp.jpeg)
+    background-image: url(../images/home-one/brand.png);
+    padding-top: 5%;
 }
 
 .item-bg3 {
-    background-image: url(../images/home-one/home-one-img6.jp.jpeg)
+    background-image: url(../images/home-one/home-one-img2.jpg);
+    padding-top: 5%;
 }
 
 .banner-area {
@@ -1168,7 +1185,7 @@ img {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/home-two.jpg)
+    /* background-image: url(../images/home-two.jpg) */
 }
 
 .banner-area::before {
@@ -1192,6 +1209,12 @@ img {
 .banner-item-ptb h1 {
     margin-top: 0
 }
+
+.banner-item-image{
+    width:10%;
+    height:10%;
+}
+
 
 .banner-area-two {
     position: relative;
@@ -1238,8 +1261,13 @@ ul.horizontal-slide li[class*="col"]:first-child {
     margin-top: -50px
 }
 
+.banner-head{
+    color:red;
+    font-size: 40px;
+}
+
 .banner-content h1 {
-    font-size: 60px;
+    font-size: 20px;
     color: #1678c9;
     font-weight: 600;
     max-width: 680px;
