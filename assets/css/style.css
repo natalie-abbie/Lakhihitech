@@ -2815,6 +2815,105 @@ ul.horizontal-slide li[class*="col"]:first-child {
     max-width: 200px
 }
 
+/* main-projects container */
+
+.card-block{
+    padding: 30px;
+}
+
+  .card-text{
+      color: black;
+      text-align: justify;
+  }
+
+  .view img{
+      width: 100%;
+  }
+
+  .grid-boxed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .grid-boxed.--row-reverse {
+    flex-direction: row-reverse;
+  }
+  .grid-boxed .grid-block {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    .grid-boxed.--col2 .grid-block {
+      width: 50%;
+    }
+    .grid-boxed.--checkered:not(.--half-background) .grid-block {
+      flex: 1 50%;
+      position: relative;
+    }
+    .grid-boxed.--checkered:not(.--half-background) .grid-block:nth-child(4n) {
+      left: -50%;
+    }
+    .grid-boxed.--checkered:not(.--half-background) .grid-block:nth-child(4n-1) {
+      left: 50%;
+    }
+    .grid-boxed.--checkered.--row-reverse .grid-block:nth-child(4n) {
+      left: 50%;
+    }
+    .grid-boxed.--checkered.--row-reverse .grid-block:nth-child(4n-1) {
+      left: -50%;
+    }
+  }
+
+  .grid-boxed .grid-block {
+    border: 1px solid #ebebeb;
+    padding: 50px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .grid-boxed .grid-block:hover{
+      background-color: #0071dc;
+      color: white;
+  }
+
+  .grid-boxed .grid-block p:hover{
+      color: white;
+  }
+
+
+  .grid-boxed .grid-block p, .grid-boxed .grid-block {
+    margin-bottom: 0;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  .grid-boxed dt.grid-block {
+    background-color: #ebebeb;
+    font-size: calc(20px + (30 - 20) * ((100vw - 400px) / (1200 - 400)));
+  }
+
+  .grid-boxed .grid-block h1{
+      font-size: 25px;
+      color: black;
+  }
+  
+  .grid-boxed .grid-block h1:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.letter{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-right: 10px;
+}
+
+
 .case-study-area .section-title h2 {
     max-width: 500px;
     margin-left: auto;
