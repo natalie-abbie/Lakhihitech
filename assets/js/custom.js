@@ -22,3 +22,52 @@ $(".newsletter-form").ajaxChimp({url:"https://envyTheme.us20.list-manage.com/sub
       $(this).removeClass("hover");
     }
   );
+
+  // logo slider
+  let logoScroller = document.querySelector('.logo-scroller');
+let logoScrollerRows = document.querySelectorAll('.logo-scroller__row');
+let logoScrollerPause = document.querySelector('.logo-scroller__pause');
+
+let pauseLogoScroller = () => {
+  logoScroller.classList.add('is-paused');
+}
+
+let unpauseLogoScroller = () => {
+  logoScroller.classList.remove('is-paused');
+}
+
+logoScrollerRows.forEach((row, rowNum) => {
+  let scrollerItems = row.querySelectorAll('.logo-scroller__item');
+  let scrollerDuration = 50;
+
+  scrollerItems.forEach((scrollerItem, i) => {
+    scrollerItem.style.animationDelay = 
+      ((i * (-scrollerDuration / scrollerItems.length)) - (rowNum * 2)) + 's';
+  });
+});
+
+logoScroller.addEventListener('mouseenter', (event) => {
+  pauseLogoScroller();
+});
+
+logoScroller.addEventListener('mouseleave', (event) => {
+  let isPaused = logoScroller.getAttribute('data-paused');
+  
+  if(isPaused != "true") {
+    unpauseLogoScroller();
+  }
+});
+
+logoScrollerPause.addEventListener('click', (event) => {
+  let isPaused = logoScroller.getAttribute('data-paused');
+  
+  if(isPaused != "true") {
+    pauseLogoScroller();
+    logoScroller.setAttribute('data-paused', 'true');
+    event.target.innerHTML = 'Unpause';
+  } else {
+    unpauseLogoScroller();
+    logoScroller.setAttribute('data-paused', 'false');
+    event.target.innerHTML = 'Pause';
+  }
+});
