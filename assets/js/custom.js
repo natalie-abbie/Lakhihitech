@@ -71,3 +71,4 @@ logoScrollerPause.addEventListener('click', (event) => {
     event.target.innerHTML = 'Pause';
   }
 });
+
