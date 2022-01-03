@@ -1121,6 +1121,160 @@ font-weight: bold;
     height:100%;
 }
 
+/* request quote */
+.ui-datepicker-trigger{
+    height:26px;
+  }
+  .ui-datepicker-trigger:hover{
+    cursor:pointer;
+  }
+  strong{
+    color:red;
+  }
+
+  label{
+    font-weight:400;
+    color:black;
+    font-size:14px;
+  }
+  
+
+  .form-container {
+      max-width:500px;
+      width:100%;
+      margin:0 auto;
+      position:relative;
+    display:block !important;
+    
+  }
+  
+  #Requestform input[type="text"], #Requestform input[type="email"], #Requestform input[type="tel"], #Requestform input[type="url"], #Requestform textarea, #Requestform button[type="submit"] { 
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+  }
+  
+  #Requestform {
+      background:#e0e0e0;
+      padding:25px;
+      margin:50px 0;
+    border: 2px solid #e0e0e0;
+    box-shadow: inset 0 0 2em rgba(147, 149, 152, 0.5);
+  }
+  
+  fieldset {
+      border: medium none !important;
+      min-width: 100%;
+      padding: 0;
+  }
+  .name{
+    float:left;
+     display:inline-block;
+  }
+  .firstname, .lastname{
+    width:49.5%;
+    display:inline-block;
+    border:1px solid #939598;
+      background:#FFF;
+      margin:.5em 0;
+      padding:15px;
+    border-radius:6px;
+  }
+  .date{
+    width:28%;
+    border:1px solid #939598;
+      background:#FFF;
+      margin:.5em 0;
+      padding:15px;
+    border-radius:6px;
+  }
+  .icon {
+    color: black;
+    min-width: 5px;
+    text-align: center;
+  }
+  .icon:hover{
+    cursor:pointer;
+  }
+  
+  #Requestform input[type="tel"]{
+    width:32.8%;
+    border:1px solid #939598;
+      background:#FFF;
+      padding:15px;
+    border-radius:6px;
+    margin:.5em 0;
+  }
+    
+  .Email,#Requestform input[type="url"] {
+      border:1px solid #939598;
+    width:100%;
+      background:#FFF;
+    margin:.5em 0;
+      padding:15px;
+    border-radius:6px;
+  }
+  #Requestform textarea{
+    width:100%;
+    border-radius:6px solid #939598;
+    margin:.5em 0;
+    resize: both;
+  }
+  #Requestform input[type="text"]:hover, #Requestforminput[type="email"]:hover, #Requestform input[type="tel"]:hover, #Requestform input[type="url"]:hover, #Requestform textarea:hover {
+      -webkit-transition:border-color 0.3s ease-in-out;
+      -moz-transition:border-color 0.3s ease-in-out;
+      transition:border-color 0.3s ease-in-out;
+      border:1px solid #AAA;
+  }
+  
+  #Requestform textarea {
+      height:100px;
+      max-width:100%;
+    resize:none;
+  }
+  
+  #Requestform button[type="submit"] {
+      cursor:pointer;
+  box-shadow: 0 1px 2px rgba(68, 68, 68, 0.1);
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33;
+      border-radius: 6px;
+      color: #FFF;
+      background-color: #FF0000;
+      border-color: #FF0000;
+      background-image: linear-gradient(to bottom, #FF0000 0%,   #cc0000 100%);
+      float:right;
+  }
+  
+  #Requestform button[type="submit"]:hover {
+       background-color: #FF0000;
+      border-color: #c70404;
+      -webkit-transition:background 0.3s ease-in-out;
+      -moz-transition:background 0.3s ease-in-out;
+      transition:background-color 0.3s ease-in-out;
+  }
+  
+  #Requestform button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+  
+  #Requestform input:focus, #Requestform textarea:focus {
+      outline:0;
+      border:1px solid #999;
+  }
+  ::-webkit-input-placeholder {
+   color:#888;
+  }
+  :-moz-placeholder {
+   color:#888;
+  }
+  ::-moz-placeholder {
+   color:#888;
+  }
+  :-ms-input-placeholder {
+   color:#888;
+  }
+  
+/* end */
+
+
 
 
 .banner-item::before {

@@ -72,3 +72,67 @@ logoScrollerPause.addEventListener('click', (event) => {
   }
 });
 
+
+// add active to tab
+$(document).ready(function() {
+  $('li').click(function() {
+      $('li.nav-link.active').removeClass("active");
+      $(this).addClass("active");
+  });
+});
+
+
+// request form
+// Prevent selection of invalid dates through the select controls 
+function checkDays() { 
+  var daysInMonth = 32 - new Date($('#year').val(), $('#month').val(), 32).getDate();
+  $('#day option:gt(27)').removeAttr('disabled');
+  $('#day option:gt(' + (daysInMonth - 1) +')').attr('disabled', true);
+  if ($('#day').val() > daysInMonth) { 
+      $('#day').val(daysInMonth); 
+  } 
+}
+
+$("#datepicker").datepicker({
+  showOn: "button",
+  buttonImage: "https://www.fccomfort.com/wp-content/uploads/2019/01/calendar-icon-1.png",
+  buttonImageOnly: true,
+  onSelect: function(dateText, inst) {
+      //dateText comes in as MM/DD/YY
+      var datePieces = dateText.split('/');
+      var month = datePieces[0];
+      var day = datePieces[1];
+      var year = datePieces[2];
+      //define select option values for
+      //corresponding element
+      $('input#month').val(month);
+      $('input#day').val(day);
+      $('input#year').val(year);
+
+  }
+});
+
+$('#year').change(function() {
+    $('#month option').removeAttr('disabled'); // Enable all months
+    var today = new Date();
+    if ($(this).val() == today.getFullYear()) { // If current year
+          $('#month option:lt(' + today.getMonth() + ')').attr('disabled', true); // Disable earlier months
+    }
+    $('#month').change(); // Cascade changes
+
+});
+$('#month').change(function() {
+
+    $('#day option').removeAttr('disabled'); // Enable all days
+
+    var today = new Date();
+
+    if ($('#year').val() == today.getFullYear() && $(this).val() == (today.getMonth() + 1)) {
+          // If current year and month
+
+          $('#days option:lt(' + (today.getDate() - 1) + ')').attr('disabled', true); // Disable earlier days
+
+    }
+    checkDays(); // Ensure only valid dates
+
+});

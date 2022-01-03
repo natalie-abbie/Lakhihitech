@@ -18,6 +18,10 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="icon" type="image/png" href="assets/images/favicon.jpg">
 <link rel="icon" type="image/png" href="https://www.littlesnippets.net/css/codepen-result.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="plAYMV7Q"></script>
 <title>LAKHI HIGHTECH</title>
 </head>
@@ -30,7 +34,6 @@
 </div>
 </div>
 </div>
-
 
 <header class="top-header top-header-bg">
 <div class="container">
@@ -53,7 +56,7 @@
 </a>
 </li>
 <li>
-<a href="#" target="_blank" rel="noopener noreferrer" >
+<a href="https://www.twitter.com/lakhihightech/" target="_blank" rel="noopener noreferrer" >
 <i class='bx bxl-twitter'></i>
 </a>
 </li>
@@ -63,7 +66,7 @@
 </a>
 </li>
 <li>
-<a href="#" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/lakhihitech/" target="_blank" rel="noopener noreferrer">
 <i class='bx bxl-instagram'></i>
 </a>
 </li>
@@ -75,7 +78,6 @@
 </div>
 </div>
 </header>
-
 
 <div class="navbar-area">
 
@@ -93,12 +95,12 @@
   <h1>LAKHI HIGHTECH LTD</h1>
 <!-- <img src="assets/images/logos/logo-1.png" alt="Logo"> -->
 </a>
+
+
 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
 <ul class="navbar-nav m-auto">
 <li class="nav-item">
-<a href="index.html" class="nav-link active">
-Home
-
+<a href="index.html" class="nav-link active">Home
 </a>
 
 <li class="nav-item">
@@ -190,6 +192,7 @@ Contact
 </div>
 <div class="get-btn">
 <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+</div>
 </div>
 </div>
 </div>
@@ -453,7 +456,42 @@ Contact
   <div class="row justify-content-center align-items-center">
   <div class="col-lg-6">
   <div class="about-play">
-  <img src="assets/images/about/about.jpg" alt="About Images">
+  <!-- <img src="assets/images/about/about.jpg" alt="About Images"> -->
+  <div class="form-container">
+  <form id="Requestform" action="" method="post">
+    <fieldset class="name">
+      <label>Name<strong> *</strong></label>
+      <br/>
+      <input class="firstname" placeholder="First name" type="text" tabindex="1" required autofocus>
+      <input class="lastname" placeholder="Last name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    </br>
+
+    <fieldset>
+      <label>Phone<strong> *</strong></label>
+      <br/>
+      <input placeholder="####" type="tel" tabindex="3" required>
+      <input placeholder="###" type="tel" tabindex="3" required>
+      <input placeholder="###" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <label>Email<strong> *</strong></label>
+      <br/>
+      <input class="Email" placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+
+    <fieldset>
+      <label>Kindly share specifications</label>
+      <br/>
+      <textarea placeholder="Type your Message Here...." tabindex="5"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit">Request Quote</button>
+    </fieldset>
+  </form>
+
+</div>
   
   </div>
   </div>
