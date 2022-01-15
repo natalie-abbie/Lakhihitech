@@ -1274,9 +1274,6 @@ font-weight: bold;
   
 /* end */
 
-
-
-
 .banner-item::before {
     content: '';
     position: absolute;
@@ -4103,13 +4100,14 @@ background-color: #0071dc;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 250px; /* match animation translate */
+    justify-content: center; 
     height: 100px;
     padding: 15px;
     background-color: #eee;
   }
 /* end */
+
+
 .clients-area {
     position: relative;
     z-index: 1;

@@ -136,3 +136,6 @@ $('#month').change(function() {
     checkDays(); // Ensure only valid dates
 
 });
+
+
+// brand-filter
