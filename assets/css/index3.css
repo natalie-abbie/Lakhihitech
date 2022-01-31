@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
+.typewriter{
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  background:linear-gradient(rgba(255 255 255 / 20%), rgba(255 255 255 / 54%), rgba(139, 171, 214, 0.69)), url('../images/home-one/home-one-img4.jpg') no-repeat center center / cover;
+  color: #ccc;
+  overflow:hidden;
+}
+
+
+.typewriter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}    
+
+.typewriter-container  h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+.typewriter-container  h1 {
+  font-size: 2rem;
+  color:rgb(163, 8, 8);
+  font-weight: 700;
+}
+
+.typewriter-container  h2 {
+  font-size: 2rem;
+  color: rgb(14, 13, 13);
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+@media(min-width: 1200px) {
+    .typewriter-container  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+    .typewriter-container  .container {
+    padding: 0 1rem;
+  }
+
+  .typewriter-container  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+    .typewriter-container   h1 {
+    font-size: 2.5rem;
+  }
+
+  .typewriter-container  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+

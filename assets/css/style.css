@@ -1417,7 +1417,7 @@ ul.horizontal-slide li[class*="col"]:first-child {
 
 .banner-content {
     position: relative;
-    margin-top: -50px
+    margin-top: 30px
 }
 
 .banner-head{
@@ -1838,11 +1838,11 @@ ul.horizontal-slide li[class*="col"]:first-child {
 }
 
 .about-content-2 .section-title h2 {
-    color: #fff
+    color: black
 }
 
 .about-content-2 .section-title p {
-    color: #fff
+    color: black
 }
 
 .about-content-2 .about-card {
@@ -1887,7 +1887,7 @@ ul.horizontal-slide li[class*="col"]:first-child {
 }
 
 .whyus h1{
-    color: white;
+    color: black;
 }
 
 .ol-cards,
@@ -3075,12 +3075,12 @@ ul.horizontal-slide li[class*="col"]:first-child {
 }
 
 .talk-content .section-title {
-    margin-bottom: 30px
+    margin-bottom: 10px
 }
 
-.talk-content .section-title h2 {
+.talk-content .section-title p {
     color: #fff;
-    max-width: 530px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto
 }
@@ -3523,6 +3523,12 @@ button {
   .card__image--river {
     background-image: url(../images/case-study/case-study002.jpg);
   }
+  .card__image--river1 {
+    background-image: url(../images/home-one/solution.jpeg);
+  }
+  .card__image--river2 {
+    background-image: url(../images/case-study/case-study005.jpeg);
+  }
   .card__image--record {
     background-image: url(../images/case-study/case-study004.jpg);
   }
@@ -3959,21 +3965,23 @@ button {
 }
 
 .technology-card {
-    padding: 30px;
-    border: 1px solid #fff;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.719);
     border-radius: 5px;
     text-align: center;
     margin-bottom: 30px
 }
 
-.technology-card:hover{
+/* .technology-card:hover{
 background-color: #0071dc;
-}
+} */
+
 .technology-card i {
     font-size: 50px;
     line-height: 1;
     color: #fff
 }
+
 
 .technology-card h3 {
     color: #fff;
@@ -3992,13 +4000,18 @@ background-color: #0071dc;
     margin-right: auto
 }
 
-.technology-card-color {
-    border-color: #0071dc
+.technology-card-color, img{
+    
+    border-color: #0071dc;
+
 }
 
-.technology-card-color i {
-    color: #0071dc
+
+
+.technology-card-color img{
+    object-fit: cover;
 }
+
 
 .technology-card-color h3 {
     color: #252525
@@ -5545,6 +5558,7 @@ background-color: #0071dc;
     background-position: center center;
     background-repeat: no-repeat
 }
+
 
 .contact-info span {
     color: #ffc221;
